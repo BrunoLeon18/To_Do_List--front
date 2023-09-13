@@ -1,0 +1,87 @@
+.card__container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.7em;
+    max-width: 360px;
+    width: 100%;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+    gap: 0.5em;
+    background-color: #fff;
+}
+
+.card__title{
+    text-transform: capitalize;
+    color: #666;
+}
+
+.card__task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__check{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: #666;
+}
+
+.card__input{
+    appearance: none;
+    margin: 0;
+    border: 1px solid #999;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-color: #eee;
+    cursor: pointer;
+    background-origin:border-box;
+}
+
+.card__input:checked{
+    background-color: #3f37aa;
+    border: 1px solid #3f37aa;
+    background-image: url('../../../check-regular-24.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.card__btn-contain{
+    display: flex;
+    gap: 0.3em;
+}
+
+.card__btn{
+    padding: 0.6em;
+    border-radius: 0.3em;
+    color: #fff;
+}
+
+.trash{
+    background-color: #FF3766;
+}
+
+.edit{
+    background-color:#FDAD32;
+}
+
+
+@media (max-width: 400px){
+    .card__task{
+        flex-direction: column;
+    }
+    .card__check{
+        width: 100%;
+        margin-bottom: 0.9em;
+    }
+    .card__btn-contain{
+        width: 100%;
+    }
+
+    .card__btn{
+        width: 100%;
+    }
+}
